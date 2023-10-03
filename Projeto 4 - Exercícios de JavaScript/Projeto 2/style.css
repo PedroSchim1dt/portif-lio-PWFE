@@ -1,0 +1,94 @@
+body {
+    background-color: grey;
+    color: orangered;
+    font: 16pt Arial;
+    text-align: center;
+}
+
+.box {
+    width: 70%;
+    height: 70%;
+    margin: 50px auto;
+    border: 2px black solid;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+}
+
+.header {
+    width: 70%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Bruno Ace',sans-serif;
+}
+
+.header img {
+    margin-right: 50px;
+    width: 25%;
+    height: 25%;
+    border-radius: 50px;
+}
+
+.header .linha {
+    width: auto;
+}
+
+.main {
+    display: flex;
+    width: 95%;
+}
+
+.form {
+    width: 50%;
+    padding-top: 3%;
+}
+
+.resultado {
+    width: 40%;
+    margin: 1em auto;
+    padding: 1%;
+    color: black;
+    background-color: rgb(128, 123, 123);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px orangered;
+}
+
+.main .form a {
+    width: 100%;
+}
+
+input {
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+input[type="submit"] {
+    margin: 2%;
+    height: 50px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+button{
+    box-shadow: 5px 5px 5px #000;
+}
+
+input[type="submit"]:hover {
+    background-color: yellow;
+}
+
+#res {
+    font-size: normal;
+    text-align: justify;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 4px;
+}

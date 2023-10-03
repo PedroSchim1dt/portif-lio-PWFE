@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="logo3 copy.png" alt="" id="logo">
+        </div>
+    <h1>Conversor de Temperatura</h1>
+
+    <!-- Campo de entrada onde o usuário insere a temperatura em graus Celsius -->
+    <label for="celsius">Informe a temperatura em Celsius:</label>
+    <input type="number" id="celsius" step="0.01">
+    <br>
+
+    <!-- Botão que chama a função converterParaFahrenheit() quando clicado -->
+    <button onclick="converterParaFahrenheit()">Converter para Fahrenheit</button>
+
+    <!-- Área de exibição onde o resultado da conversão será mostrado -->
+    <p>A temperatura em Fahrenheit é: <span id="fahrenheit"></span>°F</p>
+
+    <script>
+        // Função que converte temperatura de graus Celsius para Fahrenheit
+        function converterParaFahrenheit() {
+            // Obtém a temperatura em graus Celsius inserida pelo usuário
+            const temperaturaCelsius = parseFloat(document.getElementById('celsius').value);
+
+            // Converte a temperatura para graus Fahrenheit utilizando a fórmula
+            const temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32;
+
+            // Exibe a temperatura em Fahrenheit na área de resultado
+            document.getElementById('fahrenheit').textContent = temperaturaFahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="logo3 copy.png" alt="" id="logo">
+        </div>
+    <h1>Calculadora de Idade</h1>
+
+    <!-- Campo de entrada onde o usuário insere o ano de nascimento -->
+    <label for="anoNascimento">Informe o ano de nascimento:</label>
+    <input type="number" id="anoNascimento">
+
+    <!-- Botão que chama a função calcularIdade() quando clicado -->
+    <button onclick="calcularIdade()">Calcular Idade</button>
+
+    <!-- Área de exibição onde a idade calculada será mostrada -->
+    <p>Sua idade é: <span id="idade"></span> anos.</p>
+
+    <!-- Botão que chama a função verificarMaioridade() quando clicado -->
+    <button onclick="verificarMaioridade()">Verificar Maioridade</button>
+
+    <!-- Área de exibição onde o resultado da verificação (maior ou menor de idade) será mostrado -->
+    <p>Você é <span id="maioridade"></span>.</p>
+
+
+    <script>
+        // Função que calcula a idade com base no ano de nascimento
+        function calcularIdade() {
+            // Obtém o ano de nascimento inserido pelo usuário
+            const anoNascimento = parseInt(document.getElementById('anoNascimento').value);
+
+            // Obtém o ano atual
+            const anoAtual = new Date().getFullYear();
+
+            // Calcula a idade subtraindo o ano de nascimento do ano atual
+            const idade = anoAtual - anoNascimento;
+
+            // Exibe a idade calculada na área de resultado
+            document.getElementById('idade').textContent = idade;
+        }
+
+        // Função que verifica se a pessoa é maior ou menor de idade
+        function verificarMaioridade() {
+            // Obtém a idade calculada a partir da área de resultado
+            const idade = parseInt(document.getElementById('idade').textContent);
+
+            // Verifica se a idade é maior ou igual a 18 anos
+            if (idade >= 18) {
+                // Se for maior ou igual a 18, exibe "maior de idade"
+                document.getElementById('maioridade').textContent = 'maior de idade';
+            } else {
+                // Se for menor que 18, exibe "menor de idade"
+                document.getElementById('maioridade').textContent = 'menor de idade';
+            }
+        }
+    </script>
+</body>
+</html>

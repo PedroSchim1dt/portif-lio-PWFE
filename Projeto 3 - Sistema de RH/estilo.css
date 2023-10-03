@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: helvetica;
+}
+header {
+    height: 100px;
+    padding-top: 30px;
+    background-color: #00000099;
+}
+main{
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #00000099;
+}
+main section{
+    width: 500px;
+    min-height: 450px;
+    background-color: #a19797;
+    border-radius: 35px;
+    margin-bottom: 100px;
+}
+main section form {
+    width: 300px;
+    margin: 55px auto;  
+}
+main section form input{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 0 15px 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+main section form h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main section form input::placeholder{
+    color: #a4a4a4;
+    font-weight: 400;
+}
+main section form input[type=submit]{
+    background-color: #02d5fa;
+    color:#fff;
+    font-weight: 16px;
+    margin: 1px 0 0px 0;
+    cursor: pointer;
+}
+
+#sair {
+    background-color: #e50914;
+}
+
+main section form input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    accent-color: #e50914;
+}
+div{
+    width: 300px;
+    margin: 75px auto;
+    text-align: center;
+    color:#b3b3b3;
+}
+div p{
+    margin: 0;
+    padding: 0;
+}
+.texto2{
+    margin-top: 30px;
+    font-size: 12px;
+}
+div a {
+    text-decoration: none;
+    color:#fff
+}
+.voltar{
+    display: flex;
+}
+#menu{
+    flex-direction: row;
+}
+
+#voltar form {
+    width: 100%;
+    
+}
